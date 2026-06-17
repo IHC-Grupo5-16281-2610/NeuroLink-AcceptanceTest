@@ -1,0 +1,13 @@
+Feature: US01 - Registro de usuario
+
+Como visitante
+Quiero registrarme en la plataforma
+Para acceder a las funcionalidades del sistema
+
+Scenario: Registro exitoso
+
+Given que el usuario se encuentra en la pantalla de registro
+And ingresa información válida
+When presiona el botón "Registrarse"
+Then el sistema crea una nueva cuenta
+And muestra un mensaje de confirmación
