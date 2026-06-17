@@ -1,0 +1,11 @@
+Como usuario registrado
+Quiero iniciar sesión
+Para acceder a mi información personal
+
+Scenario: Inicio de sesión exitoso
+
+Given que el usuario posee una cuenta registrada
+When ingresa credenciales válidas
+And presiona el botón "Iniciar sesión"
+Then el sistema permite el acceso
+And muestra la página principal
