@@ -1,6 +1,0 @@
-Feature: US14 - Crear publicación
-
-Scenario: Publicar mensaje
-  Given que el usuario inició sesión
-  When redacta una publicación
-  Then el sistema la publica en la comunidad

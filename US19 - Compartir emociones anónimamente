@@ -1,0 +1,7 @@
+Feature: US19 - Compartir emociones anónimamente 
+
+
+Scenario: Publicar mensaje
+  Given que el usuario activa el modo anónimo
+  When publique su estado emocional
+  Then el sistema deberá ocultar su identidad.
