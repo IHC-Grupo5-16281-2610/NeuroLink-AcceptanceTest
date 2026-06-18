@@ -1,0 +1,13 @@
+Feature: US09 - Recomendaciones personalizadas
+
+  Como estudiante universitario
+  Quiero recibir recomendaciones personalizadas
+  Para mejorar mi bienestar emocional
+
+  Scenario: Visualización de recomendaciones
+
+    Given que existen registros emocionales del usuario
+    And el sistema ha realizado un análisis emocional
+    When el usuario accede a la sección de recomendaciones
+    Then el sistema muestra sugerencias personalizadas
+    And presenta recursos de apoyo relacionados
