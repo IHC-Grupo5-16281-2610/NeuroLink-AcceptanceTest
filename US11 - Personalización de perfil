@@ -1,4 +1,4 @@
-Feature: US04 - Editar perfil
+Feature: US11 - Personalización de perfil  
 
 Scenario: Actualizar información personal
   Given que el usuario inició sesión
