@@ -1,0 +1,13 @@
+Feature: US07 - Historial emocional
+
+  Como estudiante universitario
+  Quiero visualizar mis registros emocionales
+  Para identificar patrones en mi estado emocional
+
+  Scenario: Consulta del historial
+
+    Given que existen registros emocionales almacenados
+    And el usuario ha iniciado sesión
+    When accede al historial emocional
+    Then el sistema muestra los registros previos
+    And los ordena por fecha de creación
