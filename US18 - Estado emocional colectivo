@@ -1,0 +1,16 @@
+Feature: US18 - Estado emocional colectivo 
+
+  Como usuario, 
+  quiero visualizar el estado emocional general de la comunidad universitaria 
+  para sentirme acompañado. 
+
+Escenario: Estado emocional colectivo visualizado correctamente
+  Dado que existen datos emocionales anónimos de la comunidad
+  Cuando el usuario acceda a la sección comunitaria
+  Entonces el sistema deberá mostrar tendencias emocionales generales.
+
+Escenario: Estado emocional colectivo no disponible
+  Dado que no existan suficientes datos comunitarios
+  Cuando el usuario acceda a la sección comunitaria
+  Entonces el sistema deberá mostrar un mensaje indicando falta de información. 
+

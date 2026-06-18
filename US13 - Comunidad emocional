@@ -1,6 +1,0 @@
-Feature: US13 - Comunidad emocional
-
-Scenario: Ver publicaciones
-  Given que existen publicaciones disponibles
-  When el usuario accede a la comunidad
-  Then el sistema muestra las publicaciones
