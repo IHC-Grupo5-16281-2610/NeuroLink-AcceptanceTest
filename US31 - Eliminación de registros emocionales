@@ -1,7 +1,15 @@
 Feature: US31 - Eliminación de registros emocionales 
+  Como usuario, 
+  quiero eliminar mis registros emocionales 
+  para tener control de mi información personal. 
 
+Escenario: Eliminación de registro emocional exitosa
+  Dado que el usuario seleccione un registro emocional existente
+  Cuando confirme la eliminación
+  Entonces el sistema deberá borrar permanentemente el registro.
 
-Scenario: Eliminar registro
-  Given que existe un registro emocional
-  When el usuario selecciona eliminar
-  Then el sistema elimina el registro
+Escenario: Eliminación de registro emocional fallida
+  Dado que el registro seleccionado no exista o haya ocurrido un error
+  Cuando el usuario intente eliminarlo
+  Entonces el sistema deberá mostrar un mensaje de error. 
+
