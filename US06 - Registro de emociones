@@ -1,0 +1,15 @@
+Feature: US06 - Registro de emociones
+
+  Como estudiante universitario
+  Quiero registrar mi estado emocional
+  Para monitorear mi bienestar emocional
+
+  Scenario: Registro exitoso de emoción
+
+    Given que el usuario ha iniciado sesión
+    And se encuentra en la sección de emociones
+    When selecciona una emoción
+    And agrega una descripción opcional
+    And guarda el registro
+    Then el sistema almacena la emoción correctamente
+    And actualiza el historial emocional
