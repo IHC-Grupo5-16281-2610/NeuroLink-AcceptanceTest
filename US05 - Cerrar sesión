@@ -1,0 +1,6 @@
+Feature: US05 - Cerrar sesión
+
+Scenario: Cierre de sesión exitoso
+  Given que el usuario inició sesión
+  When selecciona "Cerrar sesión"
+  Then el sistema finaliza la sesión
