@@ -1,4 +1,4 @@
-Feature: US05 - Cerrar sesión
+Feature: US04 - Cerrar sesión
 
 Scenario: Cierre de sesión exitoso
   Given que el usuario inició sesión
