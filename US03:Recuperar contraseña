@@ -1,0 +1,6 @@
+Feature: US03 - Recuperar contraseña
+
+Scenario: Solicitar recuperación
+  Given que el usuario olvidó su contraseña
+  When ingresa su correo electrónico
+  Then el sistema envía instrucciones de recuperación
