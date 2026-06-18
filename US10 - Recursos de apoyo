@@ -1,6 +1,15 @@
-Feature: US10 - Recursos de apoyo
+Feature: US22 - Logros y recompensas 
+  Como usuario, 
+  quiero ganar logros por registrar emociones constantemente 
+  para mantener mi motivación. 
 
-Scenario: Buscar recursos
-  Given que el usuario accede a recursos
-  When selecciona una categoría
-  Then el sistema muestra contenido relacionado
+Escenario: Logro desbloqueado correctamente
+  Dado que el usuario mantiene registros emocionales constantes
+  Cuando alcance una meta establecida
+  Entonces el sistema deberá otorgar un logro o recompensa.
+
+Escenario: Logro no desbloqueado
+  Dado que el usuario no complete los requisitos establecidos
+  Cuando el sistema evalúe el progreso
+  Entonces no deberá otorgar recompensas. 
+
