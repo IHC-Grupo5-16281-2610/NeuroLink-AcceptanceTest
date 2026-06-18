@@ -1,6 +1,13 @@
 Feature: US11 - Personalización de perfil  
+  Como usuario
+  quiero personalizar mi perfil con una foto y descripción 
+  para sentirme identificado dentro de la aplicación 
 
-Scenario: Actualizar información personal
-  Given que el usuario inició sesión
-  When modifica sus datos personales
-  Then el sistema guarda los cambios
+Escenario: Personalización exitosa 
+  Dado que el usuario complete la información de su perfil 
+  Cuando seleccione la opción de guardar cambios 
+  Entonces el sistema deberá actualizar correctamente la información del perfil. 
+Escenario: Error al actualizar perfil 
+  Dado que exista un problema en el servidor o falten datos obligatorios 
+  Cuando el usuario intente guardar cambios 
+  Entonces el sistema deberá mostrar un mensaje de error. 
