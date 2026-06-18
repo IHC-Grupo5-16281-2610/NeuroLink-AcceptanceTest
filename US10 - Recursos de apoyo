@@ -1,0 +1,6 @@
+Feature: US10 - Recursos de apoyo
+
+Scenario: Buscar recursos
+  Given que el usuario accede a recursos
+  When selecciona una categoría
+  Then el sistema muestra contenido relacionado
