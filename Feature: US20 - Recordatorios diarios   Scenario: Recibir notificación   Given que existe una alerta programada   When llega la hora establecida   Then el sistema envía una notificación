@@ -1,6 +1,6 @@
-Feature: US12 - Notificaciones
+Feature: US20 - Recordatorios diarios 
 
-Scenario: Recibir notificación
+Scenario: Recibir recordatorios diarios
   Given que existe una alerta programada
   When llega la hora establecida
   Then el sistema envía una notificación
