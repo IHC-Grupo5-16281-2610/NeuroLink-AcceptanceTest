@@ -1,13 +1,14 @@
-Como usuario, 
-quiero iniciar sesión 
-para acceder a mi información emocional registrada. 
+Feature: US02 - Inicio de sesión
+  Como usuario
+  quiero iniciar sesión 
+  para acceder a mi información emocional registrada. 
 
 Escenario: Inicio de sesión exitoso
-Dado que el usuario posee una cuenta registrada
-Cuando ingrese correctamente sus credenciales
-Entonces el sistema deberá permitir el acceso a la aplicación.
+  Dado que el usuario posee una cuenta registrada
+  Cuando ingrese correctamente sus credenciales
+  Entonces el sistema deberá permitir el acceso a la aplicación.
 
 Escenario: Inicio de sesión fallido
-Dado que el usuario ingresa credenciales incorrectas
-Cuando intente iniciar sesión
-Entonces el sistema deberá mostrar un mensaje de acceso denegado.
+  Dado que el usuario ingresa credenciales incorrectas
+  Cuando intente iniciar sesión
+  Entonces el sistema deberá mostrar un mensaje de acceso denegado.
