@@ -1,14 +1,16 @@
 Feature: US21 - Dashboard emocional 
+  Como estudiante, 
+  quiero visualizar gráficos emocionales 
+  para entender mi progreso emocional. 
+
+Escenario: Dashboard emocional mostrado correctamente
+  Dado que el usuario posee registros emocionales
+  Cuando acceda al dashboard emocional
+  Entonces el sistema deberá mostrar gráficos y estadísticas emocionales.
+
+Escenario: Dashboard emocional sin datos
+  Dado que el usuario no tenga registros emocionales
+  Cuando acceda al dashboard emocional
+  Entonces el sistema deberá mostrar un mensaje indicando ausencia de datos.
 
 
-  Como estudiante universitario
-  Quiero visualizar estadísticas emocionales
-  Para analizar mi evolución emocional
-
-  Scenario: Consulta de estadísticas
-
-    Given que existen registros emocionales suficientes
-    And el usuario ha iniciado sesión
-    When accede al panel de estadísticas
-    Then el sistema muestra gráficos emocionales
-    And presenta indicadores de bienestar y estrés
