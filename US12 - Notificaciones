@@ -1,0 +1,6 @@
+Feature: US12 - Notificaciones
+
+Scenario: Recibir notificación
+  Given que existe una alerta programada
+  When llega la hora establecida
+  Then el sistema envía una notificación
