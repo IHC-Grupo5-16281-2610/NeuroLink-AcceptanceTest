@@ -1,0 +1,6 @@
+Feature: US08 - Eliminar registro emocional
+
+Scenario: Eliminar registro
+  Given que existe un registro emocional
+  When el usuario selecciona eliminar
+  Then el sistema elimina el registro
