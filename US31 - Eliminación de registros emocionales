@@ -1,4 +1,5 @@
-Feature: US08 - Eliminar registro emocional
+Feature: US31 - Eliminación de registros emocionales 
+
 
 Scenario: Eliminar registro
   Given que existe un registro emocional
