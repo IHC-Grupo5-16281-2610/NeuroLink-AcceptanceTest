@@ -1,0 +1,6 @@
+Feature: US15 - Contactar soporte
+
+Scenario: Enviar consulta
+  Given que el usuario accede al formulario de contacto
+  When envía un mensaje
+  Then el sistema registra la consulta
