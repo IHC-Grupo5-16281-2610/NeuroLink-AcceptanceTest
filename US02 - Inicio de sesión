@@ -1,11 +1,13 @@
-Como usuario registrado
-Quiero iniciar sesión
-Para acceder a mi información personal
+Como usuario, 
+quiero iniciar sesión 
+para acceder a mi información emocional registrada. 
 
-Scenario: Inicio de sesión exitoso
+Escenario: Inicio de sesión exitoso
+Dado que el usuario posee una cuenta registrada
+Cuando ingrese correctamente sus credenciales
+Entonces el sistema deberá permitir el acceso a la aplicación.
 
-Given que el usuario posee una cuenta registrada
-When ingresa credenciales válidas
-And presiona el botón "Iniciar sesión"
-Then el sistema permite el acceso
-And muestra la página principal
+Escenario: Inicio de sesión fallido
+Dado que el usuario ingresa credenciales incorrectas
+Cuando intente iniciar sesión
+Entonces el sistema deberá mostrar un mensaje de acceso denegado.
