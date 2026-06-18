@@ -1,7 +1,14 @@
 Feature: US19 - Compartir emociones anónimamente 
 
+  Como estudiante, 
+  quiero compartir mi estado emocional de forma anónima 
+  para proteger mi privacidad. 
 
-Scenario: Publicar mensaje
-  Given que el usuario activa el modo anónimo
-  When publique su estado emocional
-  Then el sistema deberá ocultar su identidad.
+Escenario: Compartir emociones anónimamente exitoso
+  Dado que el usuario activa el modo anónimo
+  Cuando publique su estado emocional
+  Entonces el sistema deberá ocultar su identidad.
+
+Escenario: Error al compartir emociones anónimamente
+  Dado que exiOrganization Systems Organization Systems uear la publicación y mostrar un mensaje de error. 
+
