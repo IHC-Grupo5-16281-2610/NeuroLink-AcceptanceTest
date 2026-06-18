@@ -1,0 +1,13 @@
+Feature: US11 - Estadísticas emocionales
+
+  Como estudiante universitario
+  Quiero visualizar estadísticas emocionales
+  Para analizar mi evolución emocional
+
+  Scenario: Consulta de estadísticas
+
+    Given que existen registros emocionales suficientes
+    And el usuario ha iniciado sesión
+    When accede al panel de estadísticas
+    Then el sistema muestra gráficos emocionales
+    And presenta indicadores de bienestar y estrés
