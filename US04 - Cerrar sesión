@@ -1,6 +1,14 @@
 Feature: US04 - Cerrar sesión
+  Como usuario,
+  Quiero cerrar mi sesión
+  Para proteger mi datos
 
-Scenario: Cierre de sesión exitoso
-  Given que el usuario inició sesión
-  When selecciona "Cerrar sesión"
-  Then el sistema finaliza la sesión
+Escenario: Cierre de sesión exitoso
+  Dado que el usuario tiene una sesión activa
+  Cuando seleccione la opción “Cerrar sesión”
+  Entonces el sistema deberá finalizar la sesión y redirigir al inicio de sesión.
+
+Escenario: Cierre de sesión fallido
+  Dado que exista un error de conexión con el servidor
+  Cuando el usuario intente cerrar sesión
+  Entonces el sistema deberá mostrar un mensaje de error y mantener la sesión activa.
