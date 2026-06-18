@@ -1,6 +1,15 @@
 Feature: US20 - Recordatorios diarios 
+  Como usuario, 
+  quiero recibir recordatorios diarios 
+  para registrar mis emociones constantemente. 
 
-Scenario: Recibir recordatorios diarios
-  Given que existe una alerta programada
-  When llega la hora establecida
-  Then el sistema envía una notificación
+Escenario: Recordatorio diario enviado correctamente
+  Dado que el usuario tiene activadas las notificaciones
+  Cuando llegue la hora programada
+  Entonces el sistema deberá enviar un recordatorio para registrar emociones.
+
+Escenario: Recordatorio diario no enviado
+  Dado que el usuario desactive las notificaciones
+  Cuando llegue la hora programada
+  Entonces el sistema no deberá enviar recordatorios. 
+
