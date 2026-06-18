@@ -1,15 +1,15 @@
 Feature: US12 - Registro diario de emociones 
+  Como usuario, 
+  quiero registrar mis emociones diariamente 
+  para monitorear mi estado emocional. 
 
-  Como estudiante universitario
-  Quiero registrar mi estado emocional
-  Para monitorear mi bienestar emocional
+Escenario: Registro exitoso de emoción diaria
+  Dado que el usuario selecciona una emoción y completa el registro diario
+  Cuando guarde la información
+  Entonces el sistema deberá almacenar correctamente el estado emocional.
 
-  Scenario: Registro exitoso de emoción
+Escenario: Registro fallido de emoción diaria
+  Dado que el usuario no selecciona ninguna emoción
+  Cuando intente guardar el registro
+  Entonces el sistema deberá mostrar un mensaje solicitando completar el campo. 
 
-    Given que el usuario ha iniciado sesión
-    And se encuentra en la sección de emociones
-    When selecciona una emoción
-    And agrega una descripción opcional
-    And guarda el registro
-    Then el sistema almacena la emoción correctamente
-    And actualiza el historial emocional
