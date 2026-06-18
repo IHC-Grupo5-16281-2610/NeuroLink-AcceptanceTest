@@ -1,0 +1,6 @@
+Feature: US04 - Editar perfil
+
+Scenario: Actualizar información personal
+  Given que el usuario inició sesión
+  When modifica sus datos personales
+  Then el sistema guarda los cambios
